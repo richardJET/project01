@@ -225,3 +225,51 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 20px;
+  text-align: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  letter-spacing: 0px;
+  text-transform: none;
+}
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 80px;
+  text-align: 92px;
+}
+
+h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 42px;
+}
+
+h3 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 32px;
+}
+
+h4 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 24px;
+}
+
+.menu {
+  color: #f6f6f6;
+}
+.menu a {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 20px;
+  text-align: right;
+  line-height: 29px;
+}
+
+.button {
+  font-family: "Abril Fatface", cursive;
+}

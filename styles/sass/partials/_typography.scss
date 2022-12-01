@@ -1,6 +1,6 @@
 @use './variables'as *;
 
-@mixin fontStyle($fontFamily:null, $sizeValue:null, $textAlign:null, $lineHeight:null) {
+@mixin fontStyle($fontFamily, $sizeValue, $textAlign, $lineHeight:null) {
     font-family: $fontFamily;
     font-size: $sizeValue;
     text-align: $textAlign;
@@ -8,9 +8,10 @@
 }
 
 html{
-    @include fontStyle($baseFont,20px, 32px);
+    @include fontStyle($baseFont, 20px, center, 32px);
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: $quinary;
 }
 
 p{
@@ -20,29 +21,40 @@ p{
 
 
 h1{
-    @include fontStyle($headerFont, 80px, 92px)
+    @include fontStyle($headerFont, 80px, left, 92px);
+    color: $quaternary;
 }
 
 h2{
-    @include fontStyle($headerFont, 42px)
+    @include fontStyle($headerFont, left, 42px);
 }
 
 h3{
-    @include fontStyle($headerFont, 32px)
+    @include fontStyle($headerFont, left, 32px);
 }
 
 h4{
-    @include fontStyle($headerFont, 24px)
+    @include fontStyle($headerFont, left, 24px);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+    &:hover{
+        color: $secondary;
+    }
 }
 
 .menu{
     color: $quaternary;
-
+    
     a{
-        @include fontStyle($baseFont,20px,right, 29px);
+        @include fontStyle($baseFont, 20px, right, 29px);
+        font-weight: 700;
     }
 }
 
 .button{
-    @include fontStyle($headerFont);
+    @include fontStyle($headerFont, 20px, center);
 }

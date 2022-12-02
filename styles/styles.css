@@ -271,9 +271,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover {
-  color: #e4a436;
-}
 
 .menu {
   color: #f6f6f6;
@@ -284,6 +281,9 @@ a:hover {
   text-align: right;
   line-height: 29px;
   font-weight: 700;
+}
+.menu a:hover {
+  color: #e4a436;
 }
 
 .button {
@@ -307,6 +307,11 @@ img {
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;
+}
+
+.button {
+  background-color: #e4a436;
+  padding: 15px;
 }
 
 nav {
@@ -337,4 +342,26 @@ nav ul h2 {
 
 header {
   background-color: #345231;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .wrapper h1,
+header .wrapper div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+header .wrapper h1::before {
+  content: url(./../../../assets/circle-text.png);
+  position: relative;
+  right: 0;
+}
+
+.about {
+  background-color: #f6f6f6;
 }

@@ -2,4 +2,20 @@
 
 header{
     background-color: $primary;
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+
+        h1,
+        div{
+            flex-basis: 50%;
+        }
+
+        h1::before{
+            content: url(./../../../assets/circle-text.png);
+            position: relative;
+            right: 0;
+        }
+    }
 }

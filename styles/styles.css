@@ -454,19 +454,20 @@ section {
       flex-basis: 31%;
 }
 
-footer .wrapper {
+.navigation .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-footer .wrapper div {
+.navigation .wrapper div {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 85px;
 }
-footer .copyright {
+
+.copyright {
   background-color: #1f1f1f;
   color: #f6f6f6;
   text-align: center;

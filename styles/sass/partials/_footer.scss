@@ -1,20 +1,8 @@
 @use './variables' as *;
 
-footer{
-    .wrapper{
-        display: flex;
-        flex-wrap: wrap;
-
-        div{
-            flex-basis: 50%;
-            padding-left: 85px;
-        }
-    }
-
     .copyright{
         background-color: $quinary;
         color: $quaternary;
         text-align: center;
         margin: 100px 0 0 0;
     }
-}

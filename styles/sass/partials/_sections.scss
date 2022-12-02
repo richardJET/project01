@@ -85,3 +85,15 @@ section{
     }
 }
 
+.navigation{
+    .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+    
+            div {
+                flex-basis: 50%;
+                padding-left: 85px;
+            }
+        }
+}
+

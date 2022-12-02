@@ -362,6 +362,10 @@ header .wrapper h1::before {
   right: 0;
 }
 
+section {
+  padding: 100px 0;
+}
+
 .about {
   background-color: #f6f6f6;
 }

@@ -1,5 +1,9 @@
 @use './variables' as *;
 
+section{
+    padding: 100px 0;
+}
+
 .about{
     background-color: $quaternary;
 }

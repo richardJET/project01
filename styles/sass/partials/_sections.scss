@@ -6,6 +6,7 @@ section{
 
 .about{
     background-color: $quaternary;
+    text-align: center;
 }
 
 .bucket-list{
@@ -16,6 +17,26 @@ section{
             flex-basis: 50%;
         }
     }   
+}
+
+.journey{
+    background-color: $quaternary;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        .journey-box1{
+            flex-basis: 20%;
+        }
+
+        .journey-box2{
+            flex-basis: 70%;
+        }
+        
+        img{
+            box-shadow: 10px 10px $tertiary;
+        }
+    }
 }
 
 .banner{

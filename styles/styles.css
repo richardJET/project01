@@ -229,7 +229,7 @@ html {
 html {
   font-family: "Monstserrat", sans-serif;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   line-height: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -368,6 +368,7 @@ section {
 
 .about {
   background-color: #f6f6f6;
+  text-align: center;
 }
 
 .bucket-list .wrapper {
@@ -380,6 +381,30 @@ section {
 .bucket-list .wrapper div {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.journey {
+  background-color: #f6f6f6;
+}
+.journey .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.journey .wrapper .journey-box1 {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+.journey .wrapper .journey-box2 {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+.journey .wrapper img {
+  -webkit-box-shadow: 10px 10px #709b6b;
+          box-shadow: 10px 10px #709b6b;
 }
 
 .banner {

@@ -369,3 +369,33 @@ section {
 .about {
   background-color: #f6f6f6;
 }
+
+.bucket-list .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.bucket-list .wrapper div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.banner {
+  background-image: url(./../../../assets/home-image-5.jpg);
+  width: 100%;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery ul li {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+}

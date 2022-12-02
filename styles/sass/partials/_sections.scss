@@ -7,3 +7,30 @@ section{
 .about{
     background-color: $quaternary;
 }
+
+.bucket-list{
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            flex-basis: 50%;
+        }
+    }   
+}
+
+.banner{
+    background-image: url(./../../../assets/home-image-5.jpg);
+    width: 100%;
+}
+
+.gallery{
+    ul{
+        display: flex;
+        justify-content: space-between;
+
+        li{
+            flex-basis: 31%;
+        }
+    }
+}
+

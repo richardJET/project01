@@ -1,21 +1,52 @@
 @use './variables' as *;
 
 section{
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .about{
     background-color: $quaternary;
     text-align: center;
+    padding-bottom: 200px;
 }
 
 .bucket-list{
     .wrapper{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         div{
             flex-basis: 50%;
         }
+
+        .bucket-list-box1{
+            img{
+                position: relative;
+                top: -125px;
+                box-shadow: 20px 20px $tertiary;
+            }
+        }
+
+        .bucket-list-box2{
+            padding-left: 100px;
+        }
+        
+        .bucket-list-box3{
+            order: 1;
+
+            img{
+                position: relative;
+                top: 105px;
+                box-shadow: 20px 20px $primary;
+            } 
+        }
+
+        .bucket-list-box4{
+            text-align: right;
+            padding-right: 100px;
+        }
+
+        
     }   
 }
 

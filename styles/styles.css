@@ -363,12 +363,13 @@ header .wrapper h1::before {
 }
 
 section {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .about {
   background-color: #f6f6f6;
   text-align: center;
+  padding-bottom: 200px;
 }
 
 .bucket-list .wrapper {
@@ -377,10 +378,37 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .bucket-list .wrapper div {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+.bucket-list .wrapper .bucket-list-box1 img {
+  position: relative;
+  top: -125px;
+  -webkit-box-shadow: 20px 20px #709b6b;
+          box-shadow: 20px 20px #709b6b;
+}
+.bucket-list .wrapper .bucket-list-box2 {
+  padding-left: 100px;
+}
+.bucket-list .wrapper .bucket-list-box3 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.bucket-list .wrapper .bucket-list-box3 img {
+  position: relative;
+  top: 105px;
+  -webkit-box-shadow: 20px 20px #345231;
+          box-shadow: 20px 20px #345231;
+}
+.bucket-list .wrapper .bucket-list-box4 {
+  text-align: right;
+  padding-right: 100px;
 }
 
 .journey {

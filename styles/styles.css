@@ -446,8 +446,10 @@ section {
 }
 
 .banner {
-  background-image: url(./../../../assets/home-image-5.jpg);
+  background-image: url(./../assets/home-image-5.jpg);
   width: 100%;
+  height: 400px;
+  background-size: cover;
 }
 
 .gallery ul {
@@ -485,7 +487,8 @@ section {
 }
 
 .blog-header {
-  background-image: url(./../../../assets/blog-image-1.jpg);
+  background-image: url(./../assets/blog-image-1.jpg);
+  background-size: cover;
 }
 
 .blog-sections {
@@ -515,6 +518,9 @@ section {
 }
 .blog-sections .wrapper .right-box section {
   border-bottom: #709b6b 4px solid;
+}
+.blog-sections .wrapper .right-box div {
+  margin-bottom: 20px;
 }
 .blog-sections .wrapper ul {
   list-style: disc;

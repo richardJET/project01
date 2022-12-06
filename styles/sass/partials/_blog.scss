@@ -1,7 +1,8 @@
 @use './variables' as *;
 
 .blog-header{
-    background-image: url(./../../../assets/blog-image-1.jpg);
+    background-image: url(./../assets/blog-image-1.jpg);
+    background-size: cover;
 }
 
 .blog-sections{
@@ -25,6 +26,9 @@
 
             section{
                 border-bottom: $tertiary 4px solid;
+            }
+            div{
+                margin-bottom: 20px;
             }
         }
 

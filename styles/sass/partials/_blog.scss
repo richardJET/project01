@@ -1,0 +1,16 @@
+.blog-header{
+    background-image: url(./../../../assets/blog-image-1.jpg);
+}
+
+.blog-sections{
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        .left-box{
+            width: 30%;
+        }
+        .right-box{
+            width: 70%;
+        }
+    }
+}

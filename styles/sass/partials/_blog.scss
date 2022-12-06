@@ -2,7 +2,17 @@
 
 .blog-header{
     background-image: url(./../assets/blog-image-1.jpg);
-    background-size: cover;
+    height: 65vh;
+    .wrapper{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+    }
+    h1{
+        margin: 0;
+        position: relative;
+        top: 16px;
+    }
 }
 
 .blog-sections{

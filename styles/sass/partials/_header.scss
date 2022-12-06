@@ -1,6 +1,6 @@
 @use './variables' as *;
 
-header{
+.index-header{
     background-color: $primary;
 
     .wrapper{
@@ -13,9 +13,10 @@ header{
         }
 
         h1::before{
-            content: url(./../../../assets/circle-text.png);
+            content: url(./../assets/circle-text.png);
             position: relative;
-            right: 0;
+            left: 80px;
+            top: 60px;
         }
     }
 }

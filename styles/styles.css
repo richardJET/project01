@@ -350,10 +350,10 @@ nav ul h2 {
   margin: 0;
 }
 
-header {
+.index-header {
   background-color: #345231;
 }
-header .wrapper {
+.index-header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,15 +361,16 @@ header .wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
-header .wrapper h1,
-header .wrapper div {
+.index-header .wrapper h1,
+.index-header .wrapper div {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
-header .wrapper h1::before {
-  content: url(./../../../assets/circle-text.png);
+.index-header .wrapper h1::before {
+  content: url(./../assets/circle-text.png);
   position: relative;
-  right: 0;
+  left: 80px;
+  top: 60px;
 }
 
 section {
@@ -488,7 +489,21 @@ section {
 
 .blog-header {
   background-image: url(./../assets/blog-image-1.jpg);
-  background-size: cover;
+  height: 65vh;
+}
+.blog-header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+.blog-header h1 {
+  margin: 0;
+  position: relative;
+  top: 16px;
 }
 
 .blog-sections {

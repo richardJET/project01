@@ -543,3 +543,22 @@ section {
 .blog-sections .wrapper ul p {
   margin: 0;
 }
+
+.contact-header {
+  background-image: url(./../assets/contact-image-1.jpg);
+  height: 65vh;
+}
+.contact-header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+.contact-header h1 {
+  margin: 0;
+  position: relative;
+  top: 16px;
+}

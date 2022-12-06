@@ -1,1 +1,16 @@
 @use './variables' as *;
+
+.contact-header{
+    background-image: url(./../assets/contact-image-1.jpg);
+    height: 65vh;
+        .wrapper {
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+        }
+        h1 {
+            margin: 0;
+            position: relative;
+            top: 16px;
+        }
+}

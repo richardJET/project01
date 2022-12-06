@@ -513,6 +513,9 @@ section {
 .blog-sections .wrapper .right-box {
   width: 67%;
 }
+.blog-sections .wrapper .right-box section {
+  border-bottom: #709b6b 4px solid;
+}
 .blog-sections .wrapper ul {
   list-style: disc;
 }

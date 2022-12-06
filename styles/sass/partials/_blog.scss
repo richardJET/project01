@@ -22,6 +22,10 @@
 
         .right-box{
             width: 67%;
+
+            section{
+                border-bottom: $tertiary 4px solid;
+            }
         }
 
         ul{

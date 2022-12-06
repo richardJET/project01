@@ -60,3 +60,10 @@ a{
 .button{
     @include fontStyle($headerFont, 20px, center);
 }
+
+.blog-link{
+    @include fontStyle($baseFont, 20px, left, 32px);
+    color: $tertiary;
+    text-transform: none;
+    font-weight: bold;
+}

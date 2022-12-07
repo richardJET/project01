@@ -352,6 +352,7 @@ nav ul h2 {
 
 .index-header {
   background-color: #345231;
+  padding-top: 20px;
 }
 .index-header .wrapper {
   display: -webkit-box;
@@ -360,21 +361,33 @@ nav ul h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.index-header .wrapper h1,
 .index-header .wrapper div {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  position: flex;
 }
-.index-header .wrapper h1::before {
-  content: url(./../assets/circle-text.png);
+.index-header .wrapper h1 {
+  display: inline-block;
+}
+.index-header .wrapper .circle-text {
+  width: 70px;
   position: relative;
-  left: 80px;
-  top: 60px;
+  top: 5px;
+  left: 50px;
+}
+.index-header .wrapper .portrait img {
+  position: relative;
+  top: 75px;
+  -webkit-box-shadow: 20px 20px #fff;
+          box-shadow: 20px 20px #fff;
 }
 
 section {
-  padding: 80px 0;
+  padding: 85px 0;
 }
 
 .about {
@@ -520,22 +533,35 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.blog-sections .wrapper section {
-  padding: 25px;
-  background-color: #fff;
-  margin-bottom: 20px;
+.blog-sections .wrapper section,
+.blog-sections .wrapper .blog-comment {
+  padding: 30px;
 }
 .blog-sections .wrapper .left-box {
   width: 30%;
 }
+.blog-sections .wrapper .left-box section {
+  background-color: #fff;
+}
 .blog-sections .wrapper .right-box {
   width: 67%;
 }
-.blog-sections .wrapper .right-box section {
+.blog-sections .wrapper .comments {
+  padding: 0;
+}
+.blog-sections .wrapper .blog-post,
+.blog-sections .wrapper .blog-comment2 {
   border-bottom: #709b6b 4px solid;
 }
-.blog-sections .wrapper .right-box div {
+.blog-sections .wrapper .blog-comment,
+.blog-sections .wrapper .blog-post {
   margin-bottom: 20px;
+  background-color: #fff;
+}
+.blog-sections .wrapper .blog-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .blog-sections .wrapper ul {
   list-style: disc;
@@ -561,4 +587,30 @@ section {
   margin: 0;
   position: relative;
   top: 16px;
+}
+
+.contact-sections {
+  background-color: #f6f6f6;
+  padding: 110px 0;
+}
+.contact-sections .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-sections .wrapper section {
+  padding: 25px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.contact-sections .wrapper .left-box {
+  width: 30%;
+}
+.contact-sections .wrapper .right-box {
+  width: 67%;
 }

@@ -2,21 +2,36 @@
 
 .index-header{
     background-color: $primary;
+    padding-top: 20px;
 
     .wrapper{
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
-        h1,
         div{
-            flex-basis: 50%;
+            flex-basis: 49%;
+            position: flex;
         }
 
-        h1::before{
-            content: url(./../assets/circle-text.png);
-            position: relative;
-            left: 80px;
-            top: 60px;
+        h1{
+            display: inline-block;
         }
+
+        .circle-text{
+            width: 70px;
+            position: relative;
+            top: 5px;
+            left: 50px;
+        }
+
+        .portrait{
+            img {
+                    position: relative;
+                    top: 75px;
+                    box-shadow: 20px 20px #fff;
+                }
+
+        } 
     }
 }

@@ -14,3 +14,28 @@
             top: 16px;
         }
 }
+
+.contact-sections{
+    background-color: $quaternary;
+        padding: 110px 0;
+    
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    
+            section {
+                padding: 25px;
+                background-color: #fff;
+                margin-bottom: 20px;
+            }
+    
+            .left-box {
+                width: 30%;
+            }
+    
+            .right-box {
+                width: 67%;
+            }
+        }
+}

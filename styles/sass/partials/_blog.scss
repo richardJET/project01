@@ -22,24 +22,37 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        section{
-            padding: 25px;
-            background-color: #fff;
-            margin-bottom: 20px;
+        section,
+        .blog-comment{
+            padding: 30px;
         }
         .left-box{
             width: 30%;
+            section{
+                background-color: #fff;
+            }
         }
 
         .right-box{
             width: 67%;
-
-            section{
-                border-bottom: $tertiary 4px solid;
-            }
-            div{
-                margin-bottom: 20px;
-            }
+        }
+        .comments {
+            padding: 0;
+        }
+        
+        .blog-post,
+        .blog-comment2 {
+            border-bottom: $tertiary 4px solid;
+        }
+        
+        .blog-comment,
+        .blog-post {
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        
+        .blog-comment {
+            display: flex;
         }
 
         ul{

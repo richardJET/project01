@@ -88,14 +88,42 @@ section{
 }
 
 .navigation{
+    background-color: $quaternary;
     .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        
+        .nav-box{
+            flex-basis: 50%;
+            padding-left: 85px;
             display: flex;
             flex-wrap: wrap;
-    
-            div {
-                flex-basis: 50%;
-                padding-left: 85px;
+            align-items: center;
+                    
+            div{
+                border-radius: 50%;
+                background-color: $secondary;
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    height: 50%;
+                    width: 50%;
+                }
+                
+            }
+            p{
+                margin: 10px 0 50px 50px;
+            }
+            h3{
+                margin: 0;
             }
         }
+    }
 }
+
 

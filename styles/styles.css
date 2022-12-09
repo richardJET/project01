@@ -608,6 +608,24 @@ section {
   display: -ms-flexbox;
   display: flex;
 }
+.blog-sections .wrapper .comment-photo {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  padding-right: 20px;
+}
+.blog-sections .wrapper .comment-photo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+.blog-sections .wrapper .comment-text {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+}
+.blog-sections .wrapper .comment-text p {
+  margin: 0;
+}
 .blog-sections .wrapper ul {
   list-style: disc;
 }

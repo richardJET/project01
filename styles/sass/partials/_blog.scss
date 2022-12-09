@@ -60,6 +60,21 @@
             display: flex;
         }
 
+        .comment-photo{
+            flex-basis: 15%;
+            padding-right: 20px;
+            img{
+                object-fit: contain;
+                object-position: 0 0;
+            }
+        }
+        .comment-text{
+            flex-basis: 85%;
+            p{
+                margin: 0;
+            }
+        }
+
         ul{
             list-style: disc;
             p{

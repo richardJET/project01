@@ -329,6 +329,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 nav ul {
   display: -webkit-box;
@@ -413,8 +414,8 @@ section {
 .bucket-list .wrapper .bucket-list-box1 img {
   position: relative;
   top: -125px;
-  -webkit-box-shadow: 20px 20px #709b6b;
-          box-shadow: 20px 20px #709b6b;
+  -webkit-box-shadow: 20px 20px #709b6b, -200px 20px #709b6b, -500px 20px #709b6b, -900px 20px #709b6b;
+          box-shadow: 20px 20px #709b6b, -200px 20px #709b6b, -500px 20px #709b6b, -900px 20px #709b6b;
 }
 .bucket-list .wrapper .bucket-list-box2 {
   padding-left: 100px;
@@ -427,8 +428,8 @@ section {
 .bucket-list .wrapper .bucket-list-box3 img {
   position: relative;
   top: 105px;
-  -webkit-box-shadow: 20px 20px #345231;
-          box-shadow: 20px 20px #345231;
+  -webkit-box-shadow: 20px 20px #345231, 200px 20px #345231, 500px 20px #345231, 900px 20px #345231;
+          box-shadow: 20px 20px #345231, 200px 20px #345231, 500px 20px #345231, 900px 20px #345231;
 }
 .bucket-list .wrapper .bucket-list-box4 {
   text-align: right;
@@ -575,13 +576,20 @@ section {
   padding: 30px;
 }
 .blog-sections .wrapper .left-box {
-  width: 30%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 .blog-sections .wrapper .left-box section {
   background-color: #fff;
+  margin-bottom: 20px;
+}
+.blog-sections .wrapper .left-box a,
+.blog-sections .wrapper .left-box p {
+  display: inline;
 }
 .blog-sections .wrapper .right-box {
-  width: 67%;
+  -ms-flex-preferred-size: 67%;
+      flex-basis: 67%;
 }
 .blog-sections .wrapper .comments {
   padding: 0;

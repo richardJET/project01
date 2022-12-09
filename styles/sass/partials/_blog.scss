@@ -27,14 +27,19 @@
             padding: 30px;
         }
         .left-box{
-            width: 30%;
+            flex-basis: 30%;
             section{
                 background-color: #fff;
+                margin-bottom: 20px;
+            }
+            a,
+            p{
+                display: inline;
             }
         }
 
         .right-box{
-            width: 67%;
+            flex-basis: 67%;
         }
         .comments {
             padding: 0;

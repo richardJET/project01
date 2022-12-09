@@ -1,0 +1,51 @@
+@media (max-width: 1000px) {
+    .index-header .wrapper{
+        flex-direction: column;
+        
+        div{
+            width: 80%;
+            text-align: center;
+        }
+
+        .circle-text{
+            top: 60px;
+        }
+    }
+
+    .about{
+        padding-bottom: 75px;
+    }
+
+    .bucket-list .wrapper{
+        flex-direction: column;
+        div{
+            flex-basis: 100%;
+        }
+        .bucket-list-box1 img{
+            top: 0;
+        }
+        .bucket-list-box3{
+            order: 0;
+            img{
+                top: 0;
+            }
+        }
+        .bucket-list-box2,
+        .bucket-list-box4{
+            text-align: center;
+            padding: 50px 0;
+        }
+    }
+    .journey .wrapper {
+    
+        .journey-box1,
+        .journey-box2 {
+            flex-basis: 45%;
+        }
+    }
+    .navigation .wrapper .nav-box{
+        padding-left: 0px;
+    }
+    
+}
+

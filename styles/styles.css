@@ -632,6 +632,35 @@ section {
 .blog-sections .wrapper ul p {
   margin: 0;
 }
+.blog-sections form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blog-sections form input,
+.blog-sections form textarea,
+.blog-sections form button {
+  border: none;
+  margin-bottom: 20px;
+}
+.blog-sections form button,
+.blog-sections form textarea {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.blog-sections form input,
+.blog-sections form textarea {
+  padding: 25px 40px;
+}
+.blog-sections form input {
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+}
+.blog-sections form input#name {
+  margin-right: 20px;
+}
 
 .contact-header {
   background-image: url(./../assets/contact-image-1.jpg);

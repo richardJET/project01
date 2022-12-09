@@ -81,5 +81,36 @@
                 margin: 0;
             }
         }
+
+    }
+
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        
+        input,
+        textarea,
+        button{
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        button,
+        textarea{
+            flex-basis: 100%;
+        }
+
+        input,
+        textarea{
+            padding: 25px 40px;
+        }
+
+        input{
+            flex-basis: calc(100%/2 - 10px);
+        }
+
+        input#name{
+            margin-right: 20px;
+        }
     }
 }

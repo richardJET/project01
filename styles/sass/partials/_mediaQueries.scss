@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @media (max-width: 1000px) {
     .index-header .wrapper{
         flex-direction: column;
@@ -43,8 +45,51 @@
             flex-basis: 45%;
         }
     }
-    .navigation .wrapper .nav-box{
-        padding-left: 0px;
+
+    form{
+        input{
+            flex-basis: 100%;
+        }
+        input#name{
+            margin-right: 0;
+        }
+    }    
+}
+
+@media (max-width: 750px) {
+    nav{
+        height: 50px;
+        ul{
+            display: none;
+        }
+        li{
+            padding: 0;
+        }
+        label{
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-left: 25px;
+
+            img{
+                width: 20px;
+                margin-left: 5px;
+            }
+        }
+        input {
+            position: absolute;
+            left: -1000vw;
+        }
+        input:checked ~ ul {
+            display: inline-block;
+            background-color: $primary;
+            position: relative;
+            h2{
+                display: none;
+            }
+            padding: 25px 75px 25px 25px;
+        }
     }
     
 }

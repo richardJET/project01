@@ -350,11 +350,15 @@ nav ul {
   padding: 10px 0;
   margin: 0;
 }
-nav ul li {
+nav li {
   padding: 0 20px;
 }
-nav ul h2 {
+nav h2 {
   margin: 0;
+}
+nav label,
+nav input {
+  display: none;
 }
 
 .index-header {
@@ -379,12 +383,14 @@ nav ul h2 {
 }
 .index-header .wrapper h1 {
   display: inline-block;
+  position: relative;
+  right: 15px;
 }
 .index-header .wrapper .circle-text {
   width: 70px;
   position: relative;
   top: 5px;
-  left: 50px;
+  left: 30px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -790,7 +796,50 @@ form input#name {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
   }
-  .navigation .wrapper .nav-box {
-    padding-left: 0px;
+  form input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  form input#name {
+    margin-right: 0;
+  }
+}
+@media (max-width: 750px) {
+  nav {
+    height: 50px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav li {
+    padding: 0;
+  }
+  nav label {
+    cursor: pointer;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 25px;
+  }
+  nav label img {
+    width: 20px;
+    margin-left: 5px;
+  }
+  nav input {
+    position: absolute;
+    left: -1000vw;
+  }
+  nav input:checked ~ ul {
+    display: inline-block;
+    background-color: #345231;
+    position: relative;
+    padding: 25px 75px 25px 25px;
+  }
+  nav input:checked ~ ul h2 {
+    display: none;
   }
 }

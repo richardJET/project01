@@ -16,13 +16,15 @@
 
         h1{
             display: inline-block;
+            position: relative;
+            right: 15px;
         }
 
         .circle-text{
             width: 70px;
             position: relative;
             top: 5px;
-            left: 50px;
+            left: 30px;
             object-fit: contain;
         }
 

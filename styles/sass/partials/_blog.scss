@@ -2,7 +2,8 @@
 
 .blog-header{
     background-image: url(./../assets/blog-image-1.jpg);
-    height: 65vh;
+    background-size: cover;
+    height: 50vh;
     .wrapper{
         display: flex;
         align-items: flex-end;
@@ -26,21 +27,7 @@
         .blog-comment{
             padding: 30px;
         }
-        .left-box{
-            flex-basis: 30%;
-            section{
-                background-color: #fff;
-                margin-bottom: 20px;
-            }
-            a,
-            p{
-                display: inline;
-            }
-        }
-
-        .right-box{
-            flex-basis: 67%;
-        }
+        
         .comments {
             padding: 0;
         }
@@ -83,34 +70,52 @@
         }
 
     }
+}
 
-    form{
-        display: flex;
-        flex-wrap: wrap;
-        
-        input,
-        textarea,
-        button{
-            border: none;
-            margin-bottom: 20px;
-        }
+.left-box {
+    flex-basis: 30%;
 
-        button,
-        textarea{
-            flex-basis: 100%;
-        }
+    section {
+        background-color: #fff;
+        margin-bottom: 20px;
+    }
 
-        input,
-        textarea{
-            padding: 25px 40px;
-        }
+    a,
+    p {
+        display: inline;
+    }
+}
 
-        input{
-            flex-basis: calc(100%/2 - 10px);
-        }
+.right-box {
+    flex-basis: 67%;
+}
 
-        input#name{
-            margin-right: 20px;
-        }
+form {
+    display: flex;
+    flex-wrap: wrap;
+
+    input,
+    textarea,
+    button {
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    button,
+    textarea {
+        flex-basis: 100%;
+    }
+
+    input,
+    textarea {
+        padding: 25px 40px;
+    }
+
+    input {
+        flex-basis: calc(100%/2 - 10px);
+    }
+
+    input#name {
+        margin-right: 20px;
     }
 }

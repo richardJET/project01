@@ -290,6 +290,7 @@ a {
   font-family: "Abril Fatface", cursive;
   font-size: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .blog-link {
@@ -300,6 +301,11 @@ a {
   color: #709b6b;
   text-transform: none;
   font-weight: bold;
+}
+
+.left-box a {
+  text-transform: none;
+  font-weight: 700;
 }
 
 ul {
@@ -321,7 +327,7 @@ img {
 
 .button {
   background-color: #e4a436;
-  padding: 15px;
+  padding: 15px 20px;
 }
 
 nav {
@@ -540,7 +546,8 @@ section {
 
 .blog-header {
   background-image: url(./../assets/blog-image-1.jpg);
-  height: 65vh;
+  background-size: cover;
+  height: 50vh;
 }
 .blog-header .wrapper {
   display: -webkit-box;
@@ -574,22 +581,6 @@ section {
 .blog-sections .wrapper section,
 .blog-sections .wrapper .blog-comment {
   padding: 30px;
-}
-.blog-sections .wrapper .left-box {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-.blog-sections .wrapper .left-box section {
-  background-color: #fff;
-  margin-bottom: 20px;
-}
-.blog-sections .wrapper .left-box a,
-.blog-sections .wrapper .left-box p {
-  display: inline;
-}
-.blog-sections .wrapper .right-box {
-  -ms-flex-preferred-size: 67%;
-      flex-basis: 67%;
 }
 .blog-sections .wrapper .comments {
   padding: 0;
@@ -632,39 +623,59 @@ section {
 .blog-sections .wrapper ul p {
   margin: 0;
 }
-.blog-sections form {
+
+.left-box {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.left-box section {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.left-box a,
+.left-box p {
+  display: inline;
+}
+
+.right-box {
+  -ms-flex-preferred-size: 67%;
+      flex-basis: 67%;
+}
+
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.blog-sections form input,
-.blog-sections form textarea,
-.blog-sections form button {
+form input,
+form textarea,
+form button {
   border: none;
   margin-bottom: 20px;
 }
-.blog-sections form button,
-.blog-sections form textarea {
+form button,
+form textarea {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
-.blog-sections form input,
-.blog-sections form textarea {
+form input,
+form textarea {
   padding: 25px 40px;
 }
-.blog-sections form input {
+form input {
   -ms-flex-preferred-size: calc(50% - 10px);
       flex-basis: calc(50% - 10px);
 }
-.blog-sections form input#name {
+form input#name {
   margin-right: 20px;
 }
 
 .contact-header {
   background-image: url(./../assets/contact-image-1.jpg);
-  height: 65vh;
+  background-size: cover;
+  height: 50vh;
 }
 .contact-header .wrapper {
   display: -webkit-box;
@@ -697,12 +708,35 @@ section {
 }
 .contact-sections .wrapper section {
   padding: 25px;
-  background-color: #fff;
-  margin-bottom: 20px;
 }
-.contact-sections .wrapper .left-box {
-  width: 30%;
+.contact-sections ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 100%;
 }
-.contact-sections .wrapper .right-box {
-  width: 67%;
+.contact-sections li {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  margin-right: 30px;
+}
+.contact-sections li img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contact-sections section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contact-sections section p {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0;
+}
+.contact-sections section a {
+  margin-bottom: 10px;
 }

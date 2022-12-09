@@ -2,7 +2,8 @@
 
 .contact-header{
     background-image: url(./../assets/contact-image-1.jpg);
-    height: 65vh;
+    background-size: cover;
+    height: 50vh;
         .wrapper {
             display: flex;
             align-items: flex-end;
@@ -19,23 +20,37 @@
     background-color: $quaternary;
         padding: 110px 0;
     
-        .wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-    
-            section {
-                padding: 25px;
-                background-color: #fff;
-                margin-bottom: 20px;
-            }
-    
-            .left-box {
-                width: 30%;
-            }
-    
-            .right-box {
-                width: 67%;
-            }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        section {
+            padding: 25px;
         }
-}
+    }
+    ul{
+        display: flex;
+        padding: 0;
+        width: 100%;
+    }
+    li{
+        flex-basis: 10%;
+        margin-right: 30px;
+
+        img{
+            object-fit: contain;
+        }
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        p{
+            flex-basis: 100%;
+            margin: 0;
+        }
+        a{
+            margin-bottom: 10px;
+        }
+    }
+}   

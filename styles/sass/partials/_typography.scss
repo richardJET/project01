@@ -59,6 +59,7 @@ a{
 
 .button{
     @include fontStyle($headerFont, 20px, center);
+    text-transform: uppercase;
 }
 
 .blog-link{
@@ -66,4 +67,11 @@ a{
     color: $tertiary;
     text-transform: none;
     font-weight: bold;
+}
+
+.left-box{
+    a{
+        text-transform: none;
+        font-weight: 700;
+    }
 }

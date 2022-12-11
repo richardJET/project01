@@ -9,32 +9,30 @@
         align-items: center;
         justify-content: space-between;
 
-        div{
-            flex-basis: 49%;
-            position: flex;
-        }
-
-        h1{
-            display: inline-block;
-            position: relative;
-            right: 15px;
-        }
-
-        .circle-text{
-            width: 70px;
-            position: relative;
-            top: 5px;
-            left: 30px;
-            object-fit: contain;
-        }
-
-        .portrait{
-            img {
-                    position: relative;
-                    top: 75px;
-                    box-shadow: 20px 20px #fff;
-                }
-
-        } 
     }
+    div{
+        flex-basis: 49%;
+        position: flex;
+    }
+
+    h1{
+        display: inline-block;
+        position: relative;
+        right: 15px;
+    }
+    .circle-text{
+        width: 70px;
+        position: relative;
+        top: 5px;
+        left: 30px;
+        object-fit: contain;
+    }
+
+    .portrait{
+        img {
+                position: relative;
+                top: 75px;
+                box-shadow: 20px 20px #fff;
+            }
+    } 
 }

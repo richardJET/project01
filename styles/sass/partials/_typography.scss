@@ -26,15 +26,15 @@ h1{
 }
 
 h2{
-    @include fontStyle($headerFont, left, 42px);
+    @include fontStyle($headerFont, 42px, left);
 }
 
 h3{
-    @include fontStyle($headerFont, left, 32px);
+    @include fontStyle($headerFont, 32px, left);
 }
 
 h4{
-    @include fontStyle($headerFont, left, 24px);
+    @include fontStyle($headerFont, 24px, left);
 }
 
 a{

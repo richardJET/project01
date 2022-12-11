@@ -251,20 +251,20 @@ h1 {
 
 h2 {
   font-family: "Abril Fatface", cursive;
-  font-size: left;
-  text-align: 42px;
+  font-size: 42px;
+  text-align: left;
 }
 
 h3 {
   font-family: "Abril Fatface", cursive;
-  font-size: left;
-  text-align: 32px;
+  font-size: 32px;
+  text-align: left;
 }
 
 h4 {
   font-family: "Abril Fatface", cursive;
-  font-size: left;
-  text-align: 24px;
+  font-size: 24px;
+  text-align: left;
 }
 
 a {
@@ -889,5 +889,33 @@ form input#name {
   .blog-sections .comment-photo {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 38px;
+    line-height: 50px;
+  }
+  h2 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 29px;
+  }
+  h3 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 26px;
+  }
+  .index-header .wrapper .circle-text {
+    width: 50px;
+    top: 30px;
+    left: 15px;
+  }
+  .blog-sections .blog-comment {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blog-sections .comment-photo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }

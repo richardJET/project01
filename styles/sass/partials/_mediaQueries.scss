@@ -142,3 +142,31 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    h1{
+        @include fontStyle($headerFont, 38px, null, 50px);
+    }
+    h2 {
+        @include fontStyle($headerFont, 29px, null);
+    }
+    h3 {
+        @include fontStyle($headerFont, 26px, null);
+    }
+    .index-header .wrapper {
+        .circle-text {
+            width: 50px;
+            top: 30px;
+            left: 15px;
+        }
+    }
+    .blog-sections{
+        .blog-comment{
+            flex-wrap: wrap;
+        }
+        .comment-photo{
+            flex-basis: 100%;
+        }
+    }
+        
+}

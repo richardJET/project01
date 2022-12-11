@@ -23,57 +23,57 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        section,
-        .blog-comment{
-            padding: 30px;
-        }
         
-        .comments {
-            padding: 0;
-        }
-        
-        .blog-post,
-        .blog-comment2 {
-            border-bottom: $tertiary 4px solid;
-        }
-        
-        .blog-comment,
-        .blog-post {
-            margin-bottom: 20px;
-            background-color: #fff;
-        }
-        
-        .blog-comment {
-            display: flex;
-        }
+    }
+    section,
+    .blog-comment{
+        padding: 30px;
+    }
+    
+    .comments {
+        padding: 0;
+    }
+    
+    .blog-post,
+    .blog-comment2 {
+        border-bottom: $tertiary 4px solid;
+    }
+    
+    .blog-comment,
+    .blog-post {
+        margin-bottom: 20px;
+        background-color: #fff;
+    }
+    
+    .blog-comment {
+        display: flex;
+    }
 
-        .comment-photo{
-            flex-basis: 15%;
-            padding-right: 20px;
-            img{
-                object-fit: contain;
-                object-position: 0 0;
-            }
+    .comment-photo{
+        flex-basis: 15%;
+        padding-right: 20px;
+        img{
+            object-fit: contain;
+            object-position: 0 0;
         }
-        .comment-text{
-            flex-basis: 85%;
-            p{
-                margin: 0;
-            }
+    }
+    .comment-text{
+        flex-basis: 85%;
+        p{
+            margin: 0;
         }
+    }
 
-        ul{
-            list-style: disc;
-            p{
-                margin: 0;
-            }
+    ul{
+        list-style: disc;
+        p{
+            margin: 0;
         }
-
     }
 }
 
 .left-box {
-    flex-basis: 30%;
+    flex-basis: 31%;
 
     section {
         background-color: #fff;
@@ -87,7 +87,7 @@
 }
 
 .right-box {
-    flex-basis: 67%;
+    flex-basis: 66%;
 }
 
 form {
@@ -108,7 +108,7 @@ form {
 
     input,
     textarea {
-        padding: 25px 40px;
+        padding: 25px 25px;
     }
 
     input {

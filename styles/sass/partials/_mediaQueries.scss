@@ -112,6 +112,10 @@
         }
     }
 
+    .banner {
+        background-position: 60% 0;
+    }
+
     .gallery ul{
         flex-direction: column;
 
@@ -126,6 +130,15 @@
             flex-basis: 100%;
         }
     }
-    
-}
 
+    .left-box,
+    .right-box{
+        flex-basis: 100%;
+    }
+
+    .blog-sections{ 
+        .comment-photo{
+            flex-basis: 30%;
+        }
+    }
+}

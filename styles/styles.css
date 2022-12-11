@@ -585,55 +585,55 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.blog-sections .wrapper section,
-.blog-sections .wrapper .blog-comment {
+.blog-sections section,
+.blog-sections .blog-comment {
   padding: 30px;
 }
-.blog-sections .wrapper .comments {
+.blog-sections .comments {
   padding: 0;
 }
-.blog-sections .wrapper .blog-post,
-.blog-sections .wrapper .blog-comment2 {
+.blog-sections .blog-post,
+.blog-sections .blog-comment2 {
   border-bottom: #709b6b 4px solid;
 }
-.blog-sections .wrapper .blog-comment,
-.blog-sections .wrapper .blog-post {
+.blog-sections .blog-comment,
+.blog-sections .blog-post {
   margin-bottom: 20px;
   background-color: #fff;
 }
-.blog-sections .wrapper .blog-comment {
+.blog-sections .blog-comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.blog-sections .wrapper .comment-photo {
+.blog-sections .comment-photo {
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
   padding-right: 20px;
 }
-.blog-sections .wrapper .comment-photo img {
+.blog-sections .comment-photo img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: 0 0;
      object-position: 0 0;
 }
-.blog-sections .wrapper .comment-text {
+.blog-sections .comment-text {
   -ms-flex-preferred-size: 85%;
       flex-basis: 85%;
 }
-.blog-sections .wrapper .comment-text p {
+.blog-sections .comment-text p {
   margin: 0;
 }
-.blog-sections .wrapper ul {
+.blog-sections ul {
   list-style: disc;
 }
-.blog-sections .wrapper ul p {
+.blog-sections ul p {
   margin: 0;
 }
 
 .left-box {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
 }
 .left-box section {
   background-color: #fff;
@@ -645,8 +645,8 @@ section {
 }
 
 .right-box {
-  -ms-flex-preferred-size: 67%;
-      flex-basis: 67%;
+  -ms-flex-preferred-size: 66%;
+      flex-basis: 66%;
 }
 
 form {
@@ -669,7 +669,7 @@ form textarea {
 }
 form input,
 form textarea {
-  padding: 25px 40px;
+  padding: 25px 25px;
 }
 form input {
   -ms-flex-preferred-size: calc(50% - 10px);
@@ -713,7 +713,7 @@ form input#name {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contact-sections .wrapper section {
+.contact-sections section {
   padding: 25px;
 }
 .contact-sections ul {
@@ -863,6 +863,9 @@ form input#name {
   .journey .wrapper .journey-box1 {
     margin-bottom: 40px;
   }
+  .banner {
+    background-position: 60% 0;
+  }
   .gallery ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -877,5 +880,14 @@ form input#name {
   .navigation .nav-box {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .left-box,
+.right-box {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .blog-sections .comment-photo {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
 }

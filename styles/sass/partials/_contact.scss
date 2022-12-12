@@ -2,38 +2,19 @@
 
 .contact-header{
     background-image: url(./../assets/contact-image-1.jpg);
-    background-size: cover;
-    height: 50vh;
-        .wrapper {
-            display: flex;
-            align-items: flex-end;
-            height: 100%;
-        }
-        h1 {
-            margin: 0;
-            position: relative;
-            top: 16px;
-        }
 }
 
 .contact-sections{
-    background-color: $quaternary;
-        padding: 110px 0;
-    
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-    }
     section {
         padding: 25px;
     }
+
     ul{
         display: flex;
         padding: 0;
         width: 100%;
     }
+
     li{
         flex-basis: 10%;
         margin-right: 30px;
@@ -42,6 +23,7 @@
             object-fit: contain;
         }
     }
+
     section{
         display: flex;
         flex-wrap: wrap;

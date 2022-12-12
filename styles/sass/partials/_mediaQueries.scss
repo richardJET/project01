@@ -1,12 +1,12 @@
 @use './variables' as *;
 @use './typography' as *;
 
+/* Portrait tablet and small desktops */
 @media (max-width: 1000px) {
     .index-header .wrapper{
-        flex-direction: column;
-        
+        flex-direction: column;  
         div{
-            width: 80%;
+            width: 75%;
             text-align: center;
         }
 
@@ -24,23 +24,26 @@
         div{
             flex-basis: 100%;
         }
+
         .bucket-list-box1 img{
             top: 0;
         }
+
         .bucket-list-box3{
             order: 0;
             img{
                 top: 0;
             }
         }
+
         .bucket-list-box2,
         .bucket-list-box4{
             text-align: center;
             padding: 50px 0;
         }
     }
+
     .journey .wrapper {
-    
         .journey-box1,
         .journey-box2 {
             flex-basis: 45%;
@@ -51,53 +54,60 @@
         input{
             flex-basis: 100%;
         }
+
         input#name{
             margin-right: 0;
         }
     }    
 }
 
+/* Landscape phone to portrait tablet */
 @media (max-width: 750px) {
     nav{
         height: 50px;
         ul{
             display: none;
         }
+
         li{
             padding: 0;
         }
+
         label{
             cursor: pointer;
             height: 100%;
             display: flex;
             align-items: center;
             margin-left: 25px;
-
             img{
                 width: 20px;
                 margin-left: 5px;
             }
         }
+
         input {
             position: absolute;
             left: -1000vw;
         }
+
         input:checked ~ ul {
             display: inline-block;
             background-color: $tertiary;
             position: relative;
+            padding: 25px 75px 25px 25px;
             h2{
                 display: none;
             }
-            padding: 25px 75px 25px 25px;
         }
     }
+
     h1{
-        @include fontStyle($headerFont, 60px, left, 70px);
+        font-size: 60px;
     }
+
     .index-header .wrapper{
         .circle-text{
-            width: 52.5px;
+            width: 53px;
             top: 45px;
             left: 25px;
         }   
@@ -106,7 +116,6 @@
     .journey .wrapper{
         flex-direction: column;
         text-align: center;
-
         .journey-box1{
             margin-bottom: 40px;
         }
@@ -118,7 +127,6 @@
 
     .gallery ul{
         flex-direction: column;
-
         li{
             flex-basis: 100%;
             margin-bottom: 50px;
@@ -136,23 +144,32 @@
         flex-basis: 100%;
     }
 
-    .blog-sections{ 
-        .comment-photo{
-            flex-basis: 30%;
-        }
+    .blog-sections .comment-photo{
+        flex-basis: 30%;
     }
 }
 
+/* Landscape phones and down */
 @media (max-width: 500px) {
+    .wrapper{
+        width: 95%;
+    }
+    .header{
+        height: 25vh;
+    }
+
     h1{
-        @include fontStyle($headerFont, 38px, null, 50px);
+        font-size: 38px;
     }
+    
     h2 {
-        @include fontStyle($headerFont, 29px, null);
+        font-size: 29px;
     }
+
     h3 {
-        @include fontStyle($headerFont, 26px, null);
+        font-size: 26px;
     }
+
     .index-header .wrapper {
         .circle-text {
             width: 50px;
@@ -160,13 +177,22 @@
             left: 15px;
         }
     }
+
+    .sections{
+        padding: 50px 0;
+    }
+
     .blog-sections{
         .blog-comment{
             flex-wrap: wrap;
+            justify-content: center;
         }
-        .comment-photo{
+
+        .comment-text{
             flex-basis: 100%;
         }
-    }
-        
+        .comment-photo{
+            flex-basis: 80%;
+        }
+    }    
 }

@@ -244,7 +244,6 @@ p {
 h1 {
   font-family: "Abril Fatface", cursive;
   font-size: 80px;
-  text-align: left;
   line-height: 92px;
   color: #f6f6f6;
 }
@@ -252,19 +251,16 @@ h1 {
 h2 {
   font-family: "Abril Fatface", cursive;
   font-size: 42px;
-  text-align: left;
 }
 
 h3 {
   font-family: "Abril Fatface", cursive;
   font-size: 32px;
-  text-align: left;
 }
 
 h4 {
   font-family: "Abril Fatface", cursive;
   font-size: 24px;
-  text-align: left;
 }
 
 a {
@@ -533,7 +529,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
-.navigation .nav-box div img {
+.navigation .nav-box img {
   height: 50%;
   width: 50%;
 }
@@ -551,12 +547,11 @@ section {
   margin: 0;
 }
 
-.blog-header {
-  background-image: url(./../assets/blog-image-1.jpg);
+.header {
   background-size: cover;
   height: 50vh;
 }
-.blog-header .wrapper {
+.header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,17 +560,21 @@ section {
           align-items: flex-end;
   height: 100%;
 }
-.blog-header h1 {
+.header h1 {
   margin: 0;
   position: relative;
   top: 16px;
 }
 
-.blog-sections {
+.blog-header {
+  background-image: url(./../assets/blog-image-1.jpg);
+}
+
+.sections {
   background-color: #f6f6f6;
   padding: 110px 0;
 }
-.blog-sections .wrapper {
+.sections .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,12 +584,20 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.blog-sections section,
-.blog-sections .blog-comment {
-  padding: 30px;
+
+.blog-sections ul {
+  list-style: disc;
+}
+.blog-sections ul p {
+  margin: 0;
 }
 .blog-sections .comments {
   padding: 0;
+}
+.blog-sections .blog-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .blog-sections .blog-post,
 .blog-sections .blog-comment2 {
@@ -601,10 +608,9 @@ section {
   margin-bottom: 20px;
   background-color: #fff;
 }
+.blog-sections section,
 .blog-sections .blog-comment {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 30px;
 }
 .blog-sections .comment-photo {
   -ms-flex-preferred-size: 15%;
@@ -622,12 +628,6 @@ section {
       flex-basis: 85%;
 }
 .blog-sections .comment-text p {
-  margin: 0;
-}
-.blog-sections ul {
-  list-style: disc;
-}
-.blog-sections ul p {
   margin: 0;
 }
 
@@ -656,6 +656,10 @@ form {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+form input {
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+}
 form input,
 form textarea,
 form button {
@@ -671,48 +675,14 @@ form input,
 form textarea {
   padding: 25px 25px;
 }
-form input {
-  -ms-flex-preferred-size: calc(50% - 10px);
-      flex-basis: calc(50% - 10px);
-}
 form input#name {
   margin-right: 20px;
 }
 
 .contact-header {
   background-image: url(./../assets/contact-image-1.jpg);
-  background-size: cover;
-  height: 50vh;
-}
-.contact-header .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 100%;
-}
-.contact-header h1 {
-  margin: 0;
-  position: relative;
-  top: 16px;
 }
 
-.contact-sections {
-  background-color: #f6f6f6;
-  padding: 110px 0;
-}
-.contact-sections .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .contact-sections section {
   padding: 25px;
 }
@@ -748,6 +718,7 @@ form input#name {
   margin-bottom: 10px;
 }
 
+/* Portrait tablet and small desktops */
 @media (max-width: 1000px) {
   .index-header .wrapper {
     -webkit-box-orient: vertical;
@@ -756,7 +727,7 @@ form input#name {
             flex-direction: column;
   }
   .index-header .wrapper div {
-    width: 80%;
+    width: 75%;
     text-align: center;
   }
   .index-header .wrapper .circle-text {
@@ -804,6 +775,7 @@ form input#name {
     margin-right: 0;
   }
 }
+/* Landscape phone to portrait tablet */
 @media (max-width: 750px) {
   nav {
     height: 50px;
@@ -843,13 +815,10 @@ form input#name {
     display: none;
   }
   h1 {
-    font-family: "Abril Fatface", cursive;
     font-size: 60px;
-    text-align: left;
-    line-height: 70px;
   }
   .index-header .wrapper .circle-text {
-    width: 52.5px;
+    width: 53px;
     top: 45px;
     left: 25px;
   }
@@ -891,18 +860,21 @@ form input#name {
         flex-basis: 30%;
   }
 }
+/* Landscape phones and down */
 @media (max-width: 500px) {
+  .wrapper {
+    width: 95%;
+  }
+  .header {
+    height: 25vh;
+  }
   h1 {
-    font-family: "Abril Fatface", cursive;
     font-size: 38px;
-    line-height: 50px;
   }
   h2 {
-    font-family: "Abril Fatface", cursive;
     font-size: 29px;
   }
   h3 {
-    font-family: "Abril Fatface", cursive;
     font-size: 26px;
   }
   .index-header .wrapper .circle-text {
@@ -910,12 +882,22 @@ form input#name {
     top: 30px;
     left: 15px;
   }
+  .sections {
+    padding: 50px 0;
+  }
   .blog-sections .blog-comment {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .blog-sections .comment-photo {
+  .blog-sections .comment-text {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .blog-sections .comment-photo {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
   }
 }

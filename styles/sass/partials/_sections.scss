@@ -10,30 +10,27 @@ section{
     padding-bottom: 200px;
 }
 
-.bucket-list{
-    .wrapper{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        div{
-            flex-basis: 50%;
-        }
+.bucket-list .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div{
+        flex-basis: 50%;
+    }
 
-        .bucket-list-box1{
-            img{
-                position: relative;
-                top: -125px;
-                box-shadow: 20px 20px $tertiary, -200px 20px $tertiary, -500px 20px $tertiary, -900px 20px $tertiary;
-            }
-        }
+    .bucket-list-box1 img{
+        position: relative;
+        top: -125px;
+        box-shadow: 20px 20px $tertiary, -200px 20px $tertiary, -500px 20px $tertiary, -900px 20px $tertiary;
+    }
+    
 
-        .bucket-list-box2{
-            padding-left: 100px;
-        }
+    .bucket-list-box2{
+        padding-left: 100px;
+    }
         
-        .bucket-list-box3{
-            order: 1;
-
+    .bucket-list-box3{
+        order: 1;
             img{
                 position: relative;
                 top: 105px;
@@ -46,7 +43,7 @@ section{
             padding-right: 100px;
         }
     }   
-}
+
 
 .journey{
     background-color: $quaternary;
@@ -80,7 +77,6 @@ section{
         display: flex;
         justify-content: space-between;
         padding: 0;
-
         li{
             flex-basis: 31%;
         }
@@ -91,8 +87,7 @@ section{
     background-color: $quaternary;
     .wrapper {
         display: flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap; 
     }
     
     .nav-box{
@@ -110,16 +105,17 @@ section{
             display: flex;
             justify-content: center;
             align-items: center;
-
-            img{
-                height: 50%;
-                width: 50%;
-            }
-            
         }
+        
+        img{
+            height: 50%;
+            width: 50%;
+        } 
+
         p{
             margin: 10px 0 50px 50px;
         }
+
         h3{
             margin: 0;
         }

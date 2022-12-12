@@ -21,20 +21,20 @@ p{
 
 
 h1{
-    @include fontStyle($headerFont, 80px, left, 92px);
+    @include fontStyle($headerFont, 80px, null, 92px);
     color: $quaternary;
 }
 
 h2{
-    @include fontStyle($headerFont, 42px, left);
+    @include fontStyle($headerFont, 42px, null);
 }
 
 h3{
-    @include fontStyle($headerFont, 32px, left);
+    @include fontStyle($headerFont, 32px, null);
 }
 
 h4{
-    @include fontStyle($headerFont, 24px, left);
+    @include fontStyle($headerFont, 24px, null);
 }
 
 a{
@@ -44,11 +44,9 @@ a{
 
 .menu{
     color: $quaternary;
-    
     a{
         @include fontStyle($baseFont, 20px, right, 29px);
         font-weight: 700;
-        
         &:hover {
                 color: $secondary;
             }

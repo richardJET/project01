@@ -1,37 +1,51 @@
 @use './variables' as *;
 
-.blog-header{
-    background-image: url(./../assets/blog-image-1.jpg);
+.header{
     background-size: cover;
     height: 50vh;
-    .wrapper{
+
+    .wrapper {
         display: flex;
         align-items: flex-end;
         height: 100%;
     }
-    h1{
+
+    h1 {
         margin: 0;
         position: relative;
         top: 16px;
     }
 }
 
-.blog-sections{
+.blog-header{
+    background-image: url(./../assets/blog-image-1.jpg);
+}
+
+.sections{
     background-color: $quaternary;
     padding: 110px 0;
-    .wrapper{
+
+    .wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        
     }
-    section,
-    .blog-comment{
-        padding: 30px;
+}
+
+.blog-sections{
+    ul{
+    list-style: disc;
+        p{
+            margin: 0;
+        }
     }
     
-    .comments {
+    .comments{
         padding: 0;
+    }
+    
+    .blog-comment{
+        display: flex;
     }
     
     .blog-post,
@@ -45,10 +59,11 @@
         background-color: #fff;
     }
     
-    .blog-comment {
-        display: flex;
+    section,
+    .blog-comment{
+        padding: 30px;
     }
-
+    
     .comment-photo{
         flex-basis: 15%;
         padding-right: 20px;
@@ -57,42 +72,39 @@
             object-position: 0 0;
         }
     }
+
     .comment-text{
         flex-basis: 85%;
         p{
             margin: 0;
         }
     }
-
-    ul{
-        list-style: disc;
-        p{
-            margin: 0;
-        }
-    }
 }
 
-.left-box {
+// Below applies for blog and comment pagees
+.left-box{
     flex-basis: 31%;
-
-    section {
+    section{
         background-color: #fff;
         margin-bottom: 20px;
     }
 
     a,
-    p {
+    p{
         display: inline;
     }
 }
 
-.right-box {
+.right-box{
     flex-basis: 66%;
 }
 
-form {
+form{
     display: flex;
     flex-wrap: wrap;
+    input{
+        flex-basis: calc(100%/2 - 10px);
+    }
 
     input,
     textarea,
@@ -102,17 +114,13 @@ form {
     }
 
     button,
-    textarea {
+    textarea{
         flex-basis: 100%;
     }
 
     input,
-    textarea {
+    textarea{
         padding: 25px 25px;
-    }
-
-    input {
-        flex-basis: calc(100%/2 - 10px);
     }
 
     input#name {
